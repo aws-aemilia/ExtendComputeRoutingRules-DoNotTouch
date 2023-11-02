@@ -15,6 +15,17 @@
   },
   "routes": [
     {
+      "path": "/assets/index-4c4b02f8.css",
+      "target": {
+        "kind": "Compute",
+        "src": "default"
+      },
+      "fallback": {
+        "kind": "Static",
+        "cacheControl": "public, max-age=28"
+      }
+    },
+    {
       "path": "/assets/*",
       "target": {
         "kind": "Static",
@@ -40,17 +51,6 @@
       "target": {
         "kind": "Static",
         "cacheControl": "public, max-age=0"
-      }
-    },
-    {
-      "path": "/todo/categories",
-      "target": {
-        "kind": "Compute",
-        "src": "default"
-      },
-      "fallback": {
-        "kind": "Static",
-        "cacheControl": "public, max-age=28"
       }
     },
     {
