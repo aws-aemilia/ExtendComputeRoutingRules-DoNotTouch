@@ -47,20 +47,20 @@
       }
     },
     {
-      "path": "/screenshots/*",
-      "target": {
-        "kind": "Static",
-        "cacheControl": "public, max-age=0"
-      }
-    },
-    {
-      "path": "/todo/ahioToStatic",
+      "path": "/screenshots/performance.png",
       "target": {
         "kind": "ImageOptimization"
       },
       "fallback": {
         "kind": "Static",
         "cacheControl": "public, max-age=89"
+      }
+    },
+    {
+      "path": "/screenshots/*",
+      "target": {
+        "kind": "Static",
+        "cacheControl": "public, max-age=0"
       }
     },
     {
